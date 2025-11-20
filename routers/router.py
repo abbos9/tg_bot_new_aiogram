@@ -4,7 +4,11 @@ from aiogram import F, Router, types
 from aiogram.fsm.state import StatesGroup, State
 from aiogram.fsm.context import FSMContext
 
+from middleware import  TestMiddleware
+
 router = Router()
+
+router.message.middleware(TestMiddleware)
 
 class Registration(StatesGroup):
 	full_name = State()

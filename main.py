@@ -1,10 +1,11 @@
 import asyncio
 import logging
-import routers.router as r
 
 import configurations
 from aiogram import Bot, Dispatcher, types
 from aiogram.filters import CommandStart
+
+import routers.router as r
 from keybords import inline_ky
 from keybords import keyboards
 
